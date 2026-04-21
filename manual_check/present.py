@@ -1,2 +1,12 @@
+from Reloop.prompts import ManualView_Present_system_prompt
+from Reloop.prompts import ManualView_user_prompt
+from llm import llm
+
 def uses():
+    messages = [
+    {"role": "system", "content": ManualView_Present_system_prompt},
+    {"role": "user", "content": ManualView_user_prompt}
+    ]
+
+    str = llm(messages)
     return str

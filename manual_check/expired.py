@@ -1,5 +1,5 @@
-from prompts import ManualView_Expired_system_prompt
-from prompts import ManualView_user_prompt
+from Reloop.prompts import ManualView_Expired_system_prompt
+from Reloop.prompts import ManualView_user_prompt
 from llm import llm
 
 def repurposes():
