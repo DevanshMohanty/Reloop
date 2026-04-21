@@ -1,0 +1,2 @@
+def uses():
+    return str

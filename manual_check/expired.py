@@ -1,0 +1,2 @@
+def repurposes():
+    return str
