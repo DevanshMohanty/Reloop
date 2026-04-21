@@ -1,6 +1,6 @@
-from Reloop.db import prod_type,days_left,desc
-from expired import repurposes
-from present import uses
+from db import prod_type, days_left, desc
+from .expired import repurposes
+from .present import uses
 
 
 print(f"\nPRODUCT NAME: {prod_type}")

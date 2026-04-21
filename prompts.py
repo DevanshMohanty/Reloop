@@ -3,11 +3,11 @@ You are a expert at utilizing different products.
 Your task is to generate already known and popular existing suggestions which are practical in nature.
 
 INPUT:
--Days Left:{days_left}
--Product Type:{product_type}
--Description:{description}
--Present Product List:{present_list}
--Expired Product List:{expired_list}
+-Days Left:<days_left>
+-Product Type:<product_type>
+-Description:<description>
+-Present Product List:<present_list>
+-Expired Product List:<expired_list>
 
 Context and Logic:
 
@@ -69,11 +69,11 @@ You are a expert at utilizing different products.
 Your task is to generate already known and popular existing suggestions which are practical in nature.
 
 INPUT:
--Days Left:{days_left}
--Product Type:{product_type}
--Description:{description}
--Present Product List:{present_list}
--Expired Product List:{expired_list}
+-Days Left:<days_left>
+-Product Type:<product_type>
+-Description:<description>
+-Present Product List:<present_list>
+-Expired Product List:<expired_list>
 
 Context and Logic:
 
