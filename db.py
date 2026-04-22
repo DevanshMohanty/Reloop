@@ -1,5 +1,5 @@
-days_left = 2
+days_left=3
 prod_type = 'Milk'
-desc = '...'
+desc = 'Almond Milk i am lactose intolerant to milk'
 present_list=[]
 expired_list=[]
