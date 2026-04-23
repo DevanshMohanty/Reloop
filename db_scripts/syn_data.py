@@ -11,13 +11,13 @@ VALUES (?, ?, ?)
 """, [
     ("Milk", 2, "Dairy product - keep refrigerated"),
     ("Bread", 1, "Whole wheat bread"),
-    ("Cheese", -1, "Cheddar cheese expired"),
-    ("Yogurt", -3, "Greek yogurt expired"),
+    ("Cheese", -1, ""),
+    ("Yogurt", -3, ""),
     ("Shampoo", 15, "Hair care product"),
     ("Face Cream", 30, "Skin moisturizer"),
-    ("Butter", -2, "Salted butter expired"),
+    ("Butter", -2, ""),
     ("Eggs", 5, "Farm fresh eggs"),
-    ("Juice", 0, "Orange juice - last day"),
+    ("Juice", 0, ""),
     ("Soap", 50, "Bath soap")
 ])
 
