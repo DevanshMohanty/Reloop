@@ -11,20 +11,21 @@ cursor=conn.cursor()
 
 
 def job1():#only to update the sql database
-    print("Updating DB")
-    daily_update(time)
+    print(f"{time.time}:Updating DB")
+    daily_update(time.time)
+    print(f"{time.time}:Generating json representation of DB")
     verify()
     
     
 def job2():#only yields notifications
-    print("Delivering Notifications")
+    print(f"{time.time}:Delivering Notifications")
     cursor.execute("SELECT prod_type, days_left FROM products")
     rows = cursor.fetchall()
     threshold = 3
     i = 1
     for prod_type,days_left in rows:
         notif = daily_check(threshold,int(days_left),prod_type)
-        print(f"NOTIFICATION {i}")
+        print(f"{time.time}:NOTIFICATION {i}")
         print(f'\n{notif}')
         i+=1
     

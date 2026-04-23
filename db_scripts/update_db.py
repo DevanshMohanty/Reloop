@@ -1,12 +1,13 @@
 import sqlite3
+import time
 
 conn=sqlite3.connect('reloop.db')
 cursor=conn.cursor()
 
-def daily_update(time):
+def daily_update(now):
     flag = expiry_check()
 
-    print(f"Updating days left at {time}")
+    print(f"{time.time}:Updating days left")
     cursor.execute("""
         UPDATE products
         SET days_left = days_left - 1
@@ -22,7 +23,7 @@ def expiry_check():
 
     cursor.execute("SELECT prod_id, days_left FROM products")
     rows = cursor.fetchall()
-
+    print(f"{time.time}:Checking for expiration")
     for days_left in rows:
         if days_left == 0:
             check = True
@@ -54,5 +55,5 @@ def status_update():
         (",".join(expired),)
     )
 
-    print('Changing the status table')
+    print(f"{time.time}:Changing the status table")
     conn.commit()
