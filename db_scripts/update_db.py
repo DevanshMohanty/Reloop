@@ -11,6 +11,7 @@ def daily_update(time):
         UPDATE products
         SET days_left = days_left - 1
     """)
+    conn.commit()
 
     if flag:
         status_update()

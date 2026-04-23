@@ -1,4 +1,4 @@
-def daily_check(threshold,current_days_left,prod_type):
+def daily_check(threshold,current_days_left : int ,prod_type):
     notification = ''
     if(current_days_left <0 ):
         if(current_days_left == -1):
