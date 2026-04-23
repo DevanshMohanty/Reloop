@@ -31,10 +31,10 @@ def job2():#only yields notifications
     
 
 # Run at 12:00 AM every day
-schedule.every().day.at("16:19").do(job1)
+schedule.every().day.at("00:00").do(job1)
 
 # Run at 10:00 AM every day
-schedule.every().day.at("16:20").do(job2)
+schedule.every().day.at("7:00").do(job2)
 
 while True:
     schedule.run_pending()
